@@ -1,2 +1,4 @@
 .idea
 .light
+__pycache__
+*pyc
