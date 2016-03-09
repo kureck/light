@@ -18,6 +18,8 @@ settings.configure(
     ROOT_URLCONF='sitebuilder.urls',
     MIDDLEWARE_CLASSES=(),
     INSTALLED_APPS=(
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
         'django.contrib.staticfiles',
         'django.contrib.webdesign',
         'sitebuilder',
