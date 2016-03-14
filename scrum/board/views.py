@@ -5,15 +5,16 @@ from .serializers import SprintSerializer, TaskSerializer, UserSerializer
 
 User = get_user_model()
 
+
 class DefaultsMixin(object):
 
-    authentication_classes = (
-        authentication.BaseAuthentication,
-        authentication.TokenAuthentication,
-    )
-    permission_classes = (
-        permissions.IsAuthenticated,
-    )
+    # authentication_classes = (
+    #     authentication.BaseAuthentication,
+    #     authentication.TokenAuthentication,
+    # )
+    # permission_classes = (
+    #     permissions.IsAuthenticated,
+    # )
     paginate_by = 25
     paginate_by_param = 'page_size'
     max_paginate_by = 100
